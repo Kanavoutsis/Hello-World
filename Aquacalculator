@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	
+
+	int height, length, width, liters, gallons, real_liters, the_real_gallons;
+	printf("what is the Height of your aquarium? (cm): \n");
+	scanf("%d\n",&height);
+	printf("what is the Length of your aquarium? (cm): \n");
+	scanf("%d\n",&length);
+	printf("What is the Width of your aquarium? (cm): \n");
+	scanf("%d\n",&width);
+	liters=height*length*width/1000;
+	printf("the total liters are:%d\n",liters);
+	real_liters=liters-liters*10.0/100;
+	printf("the real liters of aquarium are:%d\n",real_liters);
+	gallons=liters/3.79;
+	printf("the total gallons are: %d\n",gallons);
+	the_real_gallons=real_liters/3.79;
+	printf("the real gallons in use are: %d",the_real_gallons); 
+		return 0;
+
+}
